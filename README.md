@@ -1,2 +1,1 @@
-# codektm2019
-Learn to Code
+# CODE KTM 2019 | Learn to Code
