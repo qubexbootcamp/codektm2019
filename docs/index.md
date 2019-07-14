@@ -5,8 +5,8 @@
 - [JDK 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) (*only for VSCode Users*)
 
 ### Recommended IDE Extensions
-| VS Code                  | Android Studio or Intelij   |
-| ------------------------ | --------------------------- |
-| Flutter & Dart           | Flutter & Dart              |
-| Bracket Pair Colorizer 2 | Rainbow Bracket             |
-| Pubspec Assist           | Flutter Pub version Checker |
+ | VS Code                  | Android Studio or Intelij   |
+ | ------------------------ | --------------------------- |
+ | Flutter & Dart           | Flutter & Dart              |
+ | Bracket Pair Colorizer 2 | Rainbow Bracket             |
+ | Pubspec Assist           | Flutter Pub version Checker |
