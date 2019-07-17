@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 class DataRepository {
   static List<Movie> get featuredMovies => [
         Movie(
@@ -13,6 +15,34 @@ class DataRepository {
               'http://content.reelnepal.com/photos/movieposters/im214x317/214x31731812gharmovie.jpg',
           directors: 'Arpan Thapa',
           casts: 'Arpan Thapa , Surakshya Panta , Benisha Hamal',
+        ),
+        Movie(
+          name: 'Appa',
+          imageUrl:
+              'http://content.reelnepal.com/photos/movieposters/im214x317/214x31716063appamovie.jpg',
+          directors: 'Anmol Gurung',
+          casts: 'Dayahang Rai , Aruna Karki , Tulsi Ghimire',
+        ),
+        Movie(
+          name: 'Prem Diwas',
+          imageUrl:
+              'http://content.reelnepal.com/photos/movieposters/im214x317/214x31771078prem-diwas.jpg',
+          directors: 'ogesh Ghimire',
+          casts: 'Priyanka Karki , Aayushman Deshraj Joshi , Hemant Budhathoki',
+        ),
+        Movie(
+          name: 'Ghar',
+          imageUrl:
+              'http://content.reelnepal.com/photos/movieposters/im214x317/214x31731812gharmovie.jpg',
+          directors: 'Arpan Thapa',
+          casts: 'Arpan Thapa , Surakshya Panta , Benisha Hamal',
+        ),
+        Movie(
+          name: 'Sano Mann',
+          imageUrl:
+              'http://content.reelnepal.com/photos/movieposters/im214x317/214x31726492sanomann.jpg',
+          directors: 'Suyog Gurung',
+          casts: 'Aayushman Deshraj Joshi , Shilpa Maskey , Gauri Malla',
         ),
         Movie(
           name: 'Appa',
@@ -78,6 +108,21 @@ class DataRepository {
           imageUrl:
               'http://content.reelnepal.com/Images/39040pandit-bajeko-lauri.png',
         ),
+        News(
+          title: 'Pushpa Khadka withdraws from \'Chakka Panja 3\'',
+          date: 'Jun 03, 2019',
+          body:
+              "Actor Puspa Khadka has withdrawn from ‘Chakka Panja 3’, a day before the shooting of the film was scheduled to start. Khadka has complained of being kept in the dark about his scenes in the film. He said he cannot work without knowing the script related details. Deepak Raj Giri , actor and producer ...",
+          imageUrl: 'http://content.reelnepal.com/Images/55234raamkahani.jpg',
+        ),
+        News(
+          title:
+              'Box Office plans announced in budget, government set to regulate film industry',
+          date: 'May 31, 2019',
+          body:
+              'The government has decided to implement Box Office system from the upcoming year in a bid to boost tax collection from the film industry. Although the implementation of Box Office was already announced by Film Development Board (FDB), it has now got full government backing as the plans',
+          imageUrl: 'http://content.reelnepal.com/Images/72365changa.png',
+        ),
       ];
 
   static List<Cast> get featuredActors => [
@@ -114,12 +159,23 @@ class DataRepository {
           imageUrl:
               'http://content.reelnepal.com/photos/crewstanphotos/im214x317/214x31764545paul-shah.jpg',
         ),
+        Cast(
+          name: 'Jashita Gurung',
+          imageUrl:
+              'http://content.reelnepal.com/photos/crewstanphotos/im214x317/214x31740253jatisha-gurung.jpg',
+        ),
+        Cast(
+          name: 'Surakshya Panta',
+          imageUrl:
+              'http://content.reelnepal.com/photos/crewstanphotos/im214x317/214x31785827surakshya_pant.jpg',
+          dob: '20 Feb',
+        ),
       ];
 
   static List<News> get topNepaliNews => [
         News(
           title: 'भष्मे डनको नयाँ अवतार यस्तो छ चलचित्र \'हरि\'मा',
-          date: '2074-12-13',
+          date: '2075-12-13',
           body:
               'बिपिन कार्की अभिनित पछिल्लो चलचित्र \'हरि\'को ट्रेलर सार्वजनिक भएको छ । \'जात्रा\' अभिनेता कार्कीले चलचित्र \‘नाका\’बाट आफ्नो अभिनयलाई अर्को एक उचाई दिएका थिए | यस्तैमा फरक पृष्ठभूमिमा केन्द्रित चलचित्र ‘हरी’मा बिपिनको नयाँ अवतार देख्न सकिन्छ | सफल केसी र प्रतिक गुरुङको लेखन तथा निर्देशान्मा तयार भएको चलच...',
           imageUrl:
@@ -127,21 +183,13 @@ class DataRepository {
         ),
         News(
           title: 'भष्मे डनको नयाँ अवतार यस्तो छ चलचित्र \'हरि\'मा',
-          date: '2074-12-13',
+          date: '2075-12-13',
           body:
               'बिपिन कार्की अभिनित पछिल्लो चलचित्र \'हरि\'को ट्रेलर सार्वजनिक भएको छ । \'जात्रा\' अभिनेता कार्कीले चलचित्र \‘नाका\’बाट आफ्नो अभिनयलाई अर्को एक उचाई दिएका थिए | यस्तैमा फरक पृष्ठभूमिमा केन्द्रित चलचित्र ‘हरी’मा बिपिनको नयाँ अवतार देख्न सकिन्छ | सफल केसी र प्रतिक गुरुङको लेखन तथा निर्देशान्मा तयार भएको चलच...',
         ),
         News(
           title: 'भष्मे डनको नयाँ अवतार यस्तो छ चलचित्र \'हरि\'मा',
-          date: '2074-12-13',
-          body:
-              'बिपिन कार्की अभिनित पछिल्लो चलचित्र \'हरि\'को ट्रेलर सार्वजनिक भएको छ । \'जात्रा\' अभिनेता कार्कीले चलचित्र \‘नाका\’बाट आफ्नो अभिनयलाई अर्को एक उचाई दिएका थिए | यस्तैमा फरक पृष्ठभूमिमा केन्द्रित चलचित्र ‘हरी’मा बिपिनको नयाँ अवतार देख्न सकिन्छ | सफल केसी र प्रतिक गुरुङको लेखन तथा निर्देशान्मा तयार भएको चलच...',
-          imageUrl:
-              'http://content.reelnepal.com/Images/30758bipin-karki-in-hari.jpg',
-        ),
-        News(
-          title: 'भष्मे डनको नयाँ अवतार यस्तो छ चलचित्र \'हरि\'मा',
-          date: '2074-12-13',
+          date: '2075-12-13',
           body:
               'बिपिन कार्की अभिनित पछिल्लो चलचित्र \'हरि\'को ट्रेलर सार्वजनिक भएको छ । \'जात्रा\' अभिनेता कार्कीले चलचित्र \‘नाका\’बाट आफ्नो अभिनयलाई अर्को एक उचाई दिएका थिए | यस्तैमा फरक पृष्ठभूमिमा केन्द्रित चलचित्र ‘हरी’मा बिपिनको नयाँ अवतार देख्न सकिन्छ | सफल केसी र प्रतिक गुरुङको लेखन तथा निर्देशान्मा तयार भएको चलच...',
           imageUrl:
@@ -149,7 +197,7 @@ class DataRepository {
         ),
         News(
           title: 'भष्मे डनको नयाँ अवतार यस्तो छ चलचित्र \'हरि\'मा',
-          date: '2074-12-13',
+          date: '2075-12-13',
           body:
               'बिपिन कार्की अभिनित पछिल्लो चलचित्र \'हरि\'को ट्रेलर सार्वजनिक भएको छ । \'जात्रा\' अभिनेता कार्कीले चलचित्र \‘नाका\’बाट आफ्नो अभिनयलाई अर्को एक उचाई दिएका थिए | यस्तैमा फरक पृष्ठभूमिमा केन्द्रित चलचित्र ‘हरी’मा बिपिनको नयाँ अवतार देख्न सकिन्छ | सफल केसी र प्रतिक गुरुङको लेखन तथा निर्देशान्मा तयार भएको चलच...',
           imageUrl:
@@ -157,7 +205,39 @@ class DataRepository {
         ),
         News(
           title: 'भष्मे डनको नयाँ अवतार यस्तो छ चलचित्र \'हरि\'मा',
-          date: '2074-12-13',
+          date: '2075-12-13',
+          body:
+              'बिपिन कार्की अभिनित पछिल्लो चलचित्र \'हरि\'को ट्रेलर सार्वजनिक भएको छ । \'जात्रा\' अभिनेता कार्कीले चलचित्र \‘नाका\’बाट आफ्नो अभिनयलाई अर्को एक उचाई दिएका थिए | यस्तैमा फरक पृष्ठभूमिमा केन्द्रित चलचित्र ‘हरी’मा बिपिनको नयाँ अवतार देख्न सकिन्छ | सफल केसी र प्रतिक गुरुङको लेखन तथा निर्देशान्मा तयार भएको चलच...',
+          imageUrl:
+              'http://content.reelnepal.com/Images/30758bipin-karki-in-hari.jpg',
+        ),
+        News(
+          title: 'भष्मे डनको नयाँ अवतार यस्तो छ चलचित्र \'हरि\'मा',
+          date: '2075-12-13',
+          body:
+              'बिपिन कार्की अभिनित पछिल्लो चलचित्र \'हरि\'को ट्रेलर सार्वजनिक भएको छ । \'जात्रा\' अभिनेता कार्कीले चलचित्र \‘नाका\’बाट आफ्नो अभिनयलाई अर्को एक उचाई दिएका थिए | यस्तैमा फरक पृष्ठभूमिमा केन्द्रित चलचित्र ‘हरी’मा बिपिनको नयाँ अवतार देख्न सकिन्छ | सफल केसी र प्रतिक गुरुङको लेखन तथा निर्देशान्मा तयार भएको चलच...',
+          imageUrl:
+              'http://content.reelnepal.com/Images/30758bipin-karki-in-hari.jpg',
+        ),
+        News(
+          title: 'भष्मे डनको नयाँ अवतार यस्तो छ चलचित्र \'हरि\'मा',
+          date: '2075-12-13',
+          body:
+              'बिपिन कार्की अभिनित पछिल्लो चलचित्र \'हरि\'को ट्रेलर सार्वजनिक भएको छ । \'जात्रा\' अभिनेता कार्कीले चलचित्र \‘नाका\’बाट आफ्नो अभिनयलाई अर्को एक उचाई दिएका थिए | यस्तैमा फरक पृष्ठभूमिमा केन्द्रित चलचित्र ‘हरी’मा बिपिनको नयाँ अवतार देख्न सकिन्छ | सफल केसी र प्रतिक गुरुङको लेखन तथा निर्देशान्मा तयार भएको चलच...',
+          imageUrl:
+              'http://content.reelnepal.com/Images/30758bipin-karki-in-hari.jpg',
+        ),
+        News(
+          title: 'भष्मे डनको नयाँ अवतार यस्तो छ चलचित्र \'हरि\'मा',
+          date: '2075-12-13',
+          body:
+              'बिपिन कार्की अभिनित पछिल्लो चलचित्र \'हरि\'को ट्रेलर सार्वजनिक भएको छ । \'जात्रा\' अभिनेता कार्कीले चलचित्र \‘नाका\’बाट आफ्नो अभिनयलाई अर्को एक उचाई दिएका थिए | यस्तैमा फरक पृष्ठभूमिमा केन्द्रित चलचित्र ‘हरी’मा बिपिनको नयाँ अवतार देख्न सकिन्छ | सफल केसी र प्रतिक गुरुङको लेखन तथा निर्देशान्मा तयार भएको चलच...',
+          imageUrl:
+              'http://content.reelnepal.com/Images/30758bipin-karki-in-hari.jpg',
+        ),
+        News(
+          title: 'भष्मे डनको नयाँ अवतार यस्तो छ चलचित्र \'हरि\'मा',
+          date: '2075-12-13',
           body:
               'बिपिन कार्की अभिनित पछिल्लो चलचित्र \'हरि\'को ट्रेलर सार्वजनिक भएको छ । \'जात्रा\' अभिनेता कार्कीले चलचित्र \‘नाका\’बाट आफ्नो अभिनयलाई अर्को एक उचाई दिएका थिए | यस्तैमा फरक पृष्ठभूमिमा केन्द्रित चलचित्र ‘हरी’मा बिपिनको नयाँ अवतार देख्न सकिन्छ | सफल केसी र प्रतिक गुरुङको लेखन तथा निर्देशान्मा तयार भएको चलच...',
           imageUrl:
@@ -192,6 +272,24 @@ class News {
     this.body,
     this.imageUrl,
   });
+}
+
+class Credential {
+  final String username;
+  final String password;
+
+  Credential({
+    this.username,
+    this.password,
+  });
+
+  factory Credential.fromAsset(String credential) {
+    var _credentialMap = jsonDecode(credential);
+    return Credential(
+      username: _credentialMap['username'],
+      password: _credentialMap['password'],
+    );
+  }
 }
 
 class Cast {
