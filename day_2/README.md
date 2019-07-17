@@ -27,6 +27,7 @@ Mocking HomePage for In&Out Cinema's Mobile App.
 - Rows & Columns
 - Images
 - Cards
+- InkWell/GestureDetector
 - Scrollable Widgets(GridView, ListView)
 - Switch
 - BottomSheet
