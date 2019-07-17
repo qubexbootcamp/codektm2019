@@ -1,16 +1,34 @@
-# day_2
+# Day 2 : CODE KTM BOOTCAMP
 
-A new Flutter project.
+Mocking HomePage for In&Out Cinema's Mobile App. 
 
-## Getting Started
+#### Use Montserrat Font
+- Use ExtraLight version as 300
+- Use Regular version as 500
+- Use Medium version as 700
+   
+#### Use logo as placeholder when imageUrl is not available.
 
-This project is a starting point for a Flutter application.
+### Protocols
+- Only Stateless Widgets are allowed.
+- No Navigators allowed.
 
-A few resources to get you started if this is your first Flutter project:
+### Directions
+- Login Form at the app launch.
+- Login Form should have option to show and hide password. 
+- Incorrect credential should be alerted with Snackbar.
+- Same page should change to In&Out's homepage after login.
+- HomePage should include **Featured Movies**,**Top News** and **Featured Actors** sections. (Use ListViews and GridViews)
+- News should be switchable between *English* and *Nepali*. (Use Switch Widget)
+- Movies Detail should be shown in bottom sheet.
+- News Detail should be shown in dialog.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### Widgets intended to cover with the task:
+- Rows & Columns
+- Images
+- Cards
+- Scrollable Widgets(GridView, ListView)
+- Switch
+- BottomSheet
+- Dialog
+- Snackbar

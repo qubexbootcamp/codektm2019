@@ -1,34 +1,26 @@
 import 'package:flutter/material.dart';
+import 'data_repository.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'ReelNepal',
+      title: 'In&Out',
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: MyHomePage(title: 'ReelNepal'),
+      home: HomePage(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-
+class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    //TODO: Start with an AppBar
+    return Container(
+      
+    );
   }
 }
