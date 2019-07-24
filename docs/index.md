@@ -34,12 +34,26 @@
 - JSON PODO Modeling
 - Building a network-driven app
 
-## Second Week
-Second Week will cover:
-- State Management
-- Firebase Integration
-- Logging and Inspection
-- Platform Channels
-- Offline Databases (SQL and NoSQL)
+## Second Week (Review Week) 
+**Day 6: Firebase Integration**
+- Form Validation
+- Authentication
+- Database
+- Messaging
 
-**Detailed Timeline of Second Week will be posted at the end of first week.**
+**Day 7: Working with Mobile Database**
+- Overview of Databases
+- SQL vs NoSQL
+- High level Database Management
+- Building an app using mobile database
+
+**Day 8: Architecturing and State Management**
+- Overview on project architecture
+- State Management Needs and Options
+- Provider and BLoC pattern
+
+**Day 9: Beyond Mobile with Flutter**
+- Quick Hands-on on Flutter Web
+- Finishing touch to the task that begin in Day 5
+
+**Day 10: Task Submission and Discussion**
