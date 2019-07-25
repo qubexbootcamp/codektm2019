@@ -1,4 +1,3 @@
-A sample command-line application.
+# Day 7 Helper Package
 
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+This package will help you to scrap live Last Transaction Price(LTP) for companies listed in NEPSE.
